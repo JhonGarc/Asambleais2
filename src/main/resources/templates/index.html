@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xml:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./../static/output.css">
+    <link rel="stylesheet" th:href="@{/output.css}">
 </head>
 <body>
     <div class="flex flex-col w-full h-screen">
         <div class=" h-1/2">
-            <img src="./../static/images/imgLogin.jpeg" alt="w-full">
+            <img th:src="@{/images/imgLogin.jpeg}" alt="w-full">
         </div>
         <div class="h-1/2">
             <div>
