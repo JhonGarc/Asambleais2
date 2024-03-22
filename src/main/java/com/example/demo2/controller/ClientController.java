@@ -5,9 +5,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class ClientController {
-    @GetMapping("/")
+  
+	@GetMapping("/auth/login")
     public String index(){
-        return "index";
+        return"index";
     }
+	
+	@GetMapping("/public/user")
+    public String User(){
+        return"user";
+    }
+	
+	
+    
+    
 }
 
